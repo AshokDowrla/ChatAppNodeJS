@@ -15,6 +15,7 @@ const store = configureStore({
       serializableCheck: false,
       immutableCheck: false,
     }),
+  devTools: false,
 });
 
 const persistor = persistStore(store);

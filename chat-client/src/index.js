@@ -10,6 +10,9 @@ import { Provider as ReduxProvider } from "react-redux";
 // contexts
 import SettingsProvider from "./contexts/SettingsContext";
 import { store } from "./redux/store";
+import { disableReactDevTools } from "@fvilers/disable-react-devtools";
+
+if (process.env.NODE_ENV === "production") disableReactDevTools();
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
