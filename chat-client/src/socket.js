@@ -3,7 +3,7 @@ import io from "socket.io-client"; // Add this
 let socket;
 
 const connectSocket = (user_id) => {
-  socket = io("https://postletters-api.onrender.com", {
+  socket = io("https://tele-postletters-api.onrender.com", {
     query: `user_id=${user_id}`,
   });
 } // Add this -- our server will run on port 3001, so we connect to it from here

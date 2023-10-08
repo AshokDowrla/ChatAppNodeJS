@@ -4,7 +4,7 @@ import { enUS, frFR, zhCN, viVN, arSD } from '@mui/material/locale';
 // routes
 import { PATH_DASHBOARD } from "./routes/paths";
 
-export const BASE_URL = "https://postletters-api.onrender.com";
+export const BASE_URL = "https://tele-postletters-api.onrender.com";
 
 export const CLOUDINARY_CLOUDNAME ="du2e3wn7d";
 export const S3_BUCKET_NAME = 'codingmonk';
