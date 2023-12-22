@@ -36,14 +36,14 @@ export default function Router() {
       children: [
         { element: <Navigate to={DEFAULT_PATH} replace />, index: true },
         { path: "app", element: <GeneralApp /> },
-        { path: "group", element: <Group /> },
+        // { path: "group", element: <Group /> },
         { path: "settings", element: <Settings /> },
         { path: "conversation", element: <Conversation /> },
         { path: "chats", element: <Chats /> },
         { path: "contact", element: <Contact /> },
         { path: "profile", element: <Profile /> },
 
-        {path: "call", element: <CallPage />},
+        // {path: "call", element: <CallPage />},
         
         { path: "404", element: <Page404 /> },
         { path: "*", element: <Navigate to="/404" replace /> },
@@ -61,8 +61,8 @@ const Conversation = Loadable(
   lazy(() => import("../pages/dashboard/Conversation"))
 );
 const Chats = Loadable(lazy(() => import("../pages/dashboard/Chats")));
-const Group = Loadable(lazy(() => import("../pages/dashboard/Group")));
-const CallPage = Loadable(lazy(() => import("../pages/dashboard/Call")));
+// const Group = Loadable(lazy(() => import("../pages/dashboard/Group")));
+// const CallPage = Loadable(lazy(() => import("../pages/dashboard/Call")));
 const Contact = Loadable(lazy(() => import("../sections/dashboard/Contact")));
 const Page404 = Loadable(lazy(() => import("../pages/Page404")));
 
