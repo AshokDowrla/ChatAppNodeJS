@@ -175,7 +175,7 @@ export function FetchUsers() {
         }
       )
       .then((response) => {
-        console.log(response);
+        // console.log(response);
         dispatch(slice.actions.updateUsers({ users: response.data.data }));
       })
       .catch((err) => {
@@ -197,7 +197,7 @@ export function FetchAllUsers() {
         }
       )
       .then((response) => {
-        console.log(response);
+        // console.log(response);
         dispatch(slice.actions.updateAllUsers({ users: response.data.data }));
       })
       .catch((err) => {
@@ -219,7 +219,7 @@ export function FetchFriends() {
         }
       )
       .then((response) => {
-        console.log(response);
+        // console.log(response);
         dispatch(slice.actions.updateFriends({ friends: response.data.data }));
       })
       .catch((err) => {
@@ -241,7 +241,7 @@ export function FetchFriendRequests() {
         }
       )
       .then((response) => {
-        console.log(response);
+        // console.log(response);
         dispatch(
           slice.actions.updateFriendRequests({ requests: response.data.data })
         );
@@ -268,7 +268,7 @@ export const FetchCallLogs = () => {
         },
       })
       .then((response) => {
-        console.log(response);
+        // console.log(response);
         dispatch(
           slice.actions.fetchCallLogs({ call_logs: response.data.data })
         );
@@ -288,7 +288,7 @@ export const FetchUserProfile = () => {
         },
       })
       .then((response) => {
-        console.log(response);
+        // console.log(response);
         dispatch(slice.actions.fetchUser({ user: response.data.data }));
       })
       .catch((err) => {
@@ -313,7 +313,7 @@ export const UpdateUserProfile = (formValues, callback) => {
         }
       )
       .then((response) => {
-        console.log(response);
+        // console.log(response);
 
         dispatch(slice.actions.updateUser({ user: response.data.data }));
         dispatch(slice.actions.isLoadingState(false));

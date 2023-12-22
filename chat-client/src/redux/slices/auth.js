@@ -63,7 +63,7 @@ export function NewPassword(formValues) {
         }
       )
       .then(function (response) {
-        console.log(response);
+        // console.log(response);
         dispatch(
           slice.actions.logIn({
             isLoggedIn: true,
@@ -105,7 +105,7 @@ export function ForgotPassword(formValues) {
         }
       )
       .then(function (response) {
-        console.log(response);
+        // console.log(response);
 
         dispatch(
           showSnackbar({ severity: "success", message: response.data.message })
@@ -190,7 +190,7 @@ export function SendOTP(data) {
         }
       )
       .then(function (response) {
-        console.log(response);
+        // console.log(response);
 
         dispatch(
           showSnackbar({ severity: "success", message: response.data.message })
@@ -243,7 +243,7 @@ export function RegisterUser(formValues) {
         }
       )
       .then(function (response) {
-        console.log(response);
+        // console.log(response);
         dispatch(
           slice.actions.updateRegisterEmail({ email: formValues.email })
         );
@@ -287,7 +287,7 @@ export function VerifyEmail(formValues) {
         }
       )
       .then(function (response) {
-        console.log(response);
+        // console.log(response);
         dispatch(slice.actions.updateRegisterEmail({ email: "" }));
         window.localStorage.setItem("user_id", response.data.user_id);
         dispatch(

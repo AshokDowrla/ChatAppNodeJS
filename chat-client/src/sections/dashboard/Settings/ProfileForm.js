@@ -50,7 +50,7 @@ const ProfileForm = () => {
   const onSubmit = async (data) => {
     try {
       //   Send API request
-      console.log("DATA", data);
+      // console.log("DATA", data);
       dispatch(
         UpdateUserProfile({
           firstName: data?.firstName,
