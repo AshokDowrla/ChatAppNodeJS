@@ -11,7 +11,7 @@ import {
 
 // import { faker } from "@faker-js/faker";
 
-import { ZegoExpressEngine } from "zego-express-engine-webrtc";
+// import { ZegoExpressEngine } from "zego-express-engine-webrtc";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import axiosInstance from "../../../utils/axios";
@@ -51,8 +51,8 @@ const CallDialog = ({ open, handleClose }) => {
   // Step 1
 
   // Initialize the ZegoExpressEngine instance
-  const zg = new ZegoExpressEngine(appID, server);
-
+  // const zg = new ZegoExpressEngine(appID, server);
+  const zg = null;
   const streamID = call_details?.streamID;
 
   const handleDisconnect = (event, reason) => {

@@ -7,7 +7,7 @@ import {
   Slide,
   Stack,
 } from "@mui/material";
-import { ZegoExpressEngine } from "zego-express-engine-webrtc";
+// import { ZegoExpressEngine } from "zego-express-engine-webrtc";
 import { useDispatch, useSelector } from "react-redux";
 import axiosInstance from "../../../utils/axios";
 import { socket } from "../../../socket";
@@ -45,7 +45,8 @@ const CallDialog = ({ open, handleClose }) => {
   // Step 1
 
   // Initialize the ZegoExpressEngine instance
-  const zg = new ZegoExpressEngine(appID, server);
+  // const zg = new ZegoExpressEngine(appID, server);
+  const zg = null;
 
   const audioStreamID = `audio_${call_details?.streamID}`;
   const videoStreamID = `video_${call_details?.streamID}`;
